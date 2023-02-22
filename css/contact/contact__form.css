@@ -1,0 +1,15 @@
+.contact-img {
+    width: 45%;
+    margin: auto;
+    position: relative;
+}
+.contact__img{
+    width:80%;
+    margin: auto;
+    display: block;
+}
+@media (max-width: 768px){
+    .contact-img{
+        display: none;
+    }
+}

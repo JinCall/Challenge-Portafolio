@@ -1,0 +1,19 @@
+.title {
+    color: #464646;
+}
+
+.title__div {
+    display: flex;
+    background-color: #F5F5F5;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+@media (max-width:425px){
+    .title__div {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
+}

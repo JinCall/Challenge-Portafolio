@@ -1,0 +1,22 @@
+.contact {
+    padding: 4rem 2rem;
+}
+
+.contact__box {
+    display: flex;
+    gap: 1rem;
+    width: 95%;
+    padding-top: 2rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+@media (max-width:768px) {
+    .contact {
+        padding: 2rem;
+    }
+
+    .contact__contacto {
+        padding-top: 0;
+    }
+}

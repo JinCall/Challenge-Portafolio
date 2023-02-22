@@ -1,0 +1,93 @@
+.contact__text {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #464646;
+    margin-bottom: 1rem;
+}
+
+.contact__subtext {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: .3rem;
+}
+
+.contact__form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input {
+    position: relative;
+}
+
+.contact__input,
+.contact__textarea {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+    transition: all 150ms;
+    outline: none;
+    color: #464646;
+}
+
+.contact__input:focus, .contact__textarea:focus, .contact__input:hover, .contact__textarea:hover {
+    border-bottom: 2px solid #2A7AE4;
+}
+
+input:focus::-moz-placeholder {
+    color: #2A7AE4;
+}
+
+.contact__textarea {
+    resize: none;
+}
+
+.contact__btn {
+    width: 25%;
+    padding: .8rem;
+    color: white;
+    background-color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    cursor: pointer;
+    transition: all 150ms;
+}
+
+.contact__btn:hover {
+    color: #2A7AE4;
+    background-color: white;
+    border: 1px solid #2A7AE4;
+}
+
+
+.validar-estado {
+    position: absolute;
+    font-size: 1rem;
+    right: 0;
+    color: var(--color-sec);
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .contact__text {
+        width: 100%;
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width:425px) {
+    .contact__btn {
+        width: 45%;
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,48 @@
+.menu__list, .menu-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background-color: #F5F5F5;
+}
+
+.menu__list__item a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #5f5f5f;
+    transition: all 150ms;
+    background-color: #F5F5F5;
+}
+
+.menu__list__item a:hover, .menu__list__item__contacto a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.menu__list__item__contacto {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu__list__item {
+        display: none;
+    }
+
+    .menu__list__item__contacto {
+        display: block;
+        font-weight: bold;
+    }
+    
+    .menu__list__item__contacto a {
+        color:  #5f5f5f;
+        text-decoration: none;
+        background-color: #F5F5F5;
+    }
+}
+
+@media (max-width: 425px) {
+    .menu__list__item__contacto {
+        font-weight: 500;
+        font-size: .6rem;
+    }
+}

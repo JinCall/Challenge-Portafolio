@@ -1,0 +1,11 @@
+.menu__header img {
+    width: 3rem;
+    background-color: #F5F5F5;
+}
+
+@media (max-width: 425px) {
+    .menu__header img {
+        height: 2rem;
+        background-color: #F5F5F5;
+    }
+}

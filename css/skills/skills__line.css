@@ -1,0 +1,48 @@
+.skills__line {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+}
+
+.skills__box {
+    position: relative;
+    width: 15%;
+    height: 10rem;
+}
+
+.skills__box img, .skills__box ul, .skills__box li, .skills__box {
+    background-color: white;
+}
+
+.skills__box ul {
+    position: absolute;
+    bottom: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .skills__line {
+        justify-content: center;
+    }
+
+    .skills__box {
+        width: 25%;
+        height: 7rem;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .skills__line {
+        gap: 1rem;
+    }
+
+    .skills__box {
+        width: 40%;
+        margin: 0;
+        padding: .5rem;
+    }
+}
