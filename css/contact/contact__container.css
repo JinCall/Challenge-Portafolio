@@ -68,15 +68,6 @@ input:focus::-moz-placeholder {
     border: 1px solid #2A7AE4;
 }
 
-
-.validar-estado {
-    position: absolute;
-    font-size: 1rem;
-    right: 0;
-    color: var(--color-sec);
-    opacity: 0;
-}
-
 @media (max-width: 768px) {
     .contact__text {
         width: 100%;
