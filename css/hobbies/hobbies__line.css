@@ -28,6 +28,10 @@
     font-weight: bold;
 }
 
+.hobbies__name {
+    margin-top: 1rem;
+}
+
 @media (max-width: 768px) {
 .hobbies__line {
         justify-content: center;
