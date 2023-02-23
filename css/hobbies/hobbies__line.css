@@ -6,21 +6,24 @@
     background-color: #F5F5F5;
 }
 .hobbies__box {
+    display: flex;
     position: relative;
     width: 15%;
     height: 10rem;
     margin-top: 2rem;
     border-bottom: 2px solid #C8C8C8;
     transition: all 150ms;
+    background-color: white;
 }
 
 .hobbies__box:hover {
     border-bottom: 2px solid #2A7AE4;
 }
 
-.hobbies__box img,.hobbies__box ul,.hobbies__box li,.hobbies__box {
+.hobbies__box, .hobbies__img, img,.hobbies__box ul,.hobbies__box li,.hobbies__box {
     background-color: white;
 }
+
 .hobbies__box ul {
     position: absolute;
     bottom: 1rem;
