@@ -16,7 +16,7 @@
 
 .menu__list__item a:hover, .menu__list__item__contacto a:hover {
     color: #000000;
-    text-decoration: underline;
+    border-bottom: 1px solid #000000;
 }
 
 .menu__list__item__contacto {
