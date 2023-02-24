@@ -31,6 +31,10 @@
     font-weight: bold;
 }
 
+.hobbies__img.controller img ,.hobbies__img.gloves img, .hobbies__img.headphones img, .hobbies__img.monitor img, .hobbies__img.cooking img, .hobbies__img.piano img {
+    width: 3rem;
+}
+
 .hobbies__name {
     margin-top: 1rem;
 }
@@ -56,5 +60,9 @@
         width: 40%;
         margin: 0;
         padding: .5rem;
+    }
+
+    .hobbies__img.controller img ,.hobbies__img.gloves img, .hobbies__img.headphones img, .hobbies__img.monitor img, .hobbies__img.cooking img, .hobbies__img.piano img {
+        width: 2rem;
     }
 }
