@@ -33,62 +33,11 @@ const validarFormulario = (e) => {
     }
 };
 
-const validarCampo = (expresion, input, campo) => {
-    if (expresion.test(input.value)) {
-        document.getElementById(`input_${campo}`).classList.remove("incorrecto");
-        document.getElementById(`input_${campo}`).classList.add("correcto");
-        document
-            .querySelector(`#input_${campo} i`)
-            .classList.remove("fa-times-circle");
-        document
-            .querySelector(`#input_${campo} i`)
-            .classList.add("fa-check-circle");
-
-        campos[campo] = true;
-    } else {
-        document.getElementById(`input_${campo}`).classList.add("incorrecto");
-        document.getElementById(`input_${campo}`).classList.remove("correcto");
-        document
-            .querySelector(`#input_${campo} i`)
-            .classList.add("fa-times-circle");
-        document
-            .querySelector(`#input_${campo} i`)
-            .classList.remove("fa-check-circle");
-        campos[campo] = false;
-    }
-};
-
-
 inputs.forEach((input) => {
     input.addEventListener("keyup", validarFormulario);
     input.addEventListener("blur", validarFormulario);
 });
 
-
-const textArea = (expresion, textarea, campo) => {
-    if (expresion.test(textarea.value)) {
-        document.getElementById(`input_${campo}`).classList.remove("incorrecto");
-        document.getElementById(`input_${campo}`).classList.add("correcto");
-        document
-            .querySelector(`#input_${campo} i`)
-            .classList.remove("fa-times-circle");
-        document
-            .querySelector(`#input_${campo} i`)
-            .classList.add("fa-check-circle");
-
-        campos[campo] = true;
-    } else {
-        document.getElementById(`input_${campo}`).classList.add("incorrecto");
-        document.getElementById(`input_${campo}`).classList.remove("correcto");
-        document
-            .querySelector(`#input_${campo} i`)
-            .classList.add("fa-times-circle");
-        document
-            .querySelector(`#input_${campo} i`)
-            .classList.remove("fa-check-circle");
-        campos[campo] = false;
-    }
-};
 inputa.forEach((textarea) => {
     textarea.addEventListener("keyup", validarFormulario);
     textarea.addEventListener("blur", validarFormulario);
